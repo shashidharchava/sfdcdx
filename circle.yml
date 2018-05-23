@@ -11,3 +11,6 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      - run:
+          name: retrieve code from BB
+          command: git clone ssh://git@innersource.accenture.com/tpmmdshj/sampledx.git
