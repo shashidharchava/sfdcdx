@@ -1,13 +1,10 @@
 version: 2
-machine:
-  node:
-    version: v6.1.0
-    
+   
 jobs:
   build:
-    docker:
-      - image: debian:stretch
-    steps:
+    machine: true
+ 
+ steps:
       - checkout
       - run:
           name: Greeting
