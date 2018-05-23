@@ -1,4 +1,8 @@
 version: 2
+machine:
+  node:
+    version: v6.1.0
+    
 jobs:
   build:
     docker:
@@ -11,4 +15,4 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-          command: ping innersource.accenture.com
+
