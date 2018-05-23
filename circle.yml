@@ -1,10 +1,9 @@
 version: 2
-   
 jobs:
   build:
     machine: true
- 
- steps:
+    
+    steps:
       - checkout
       - run:
           name: Greeting
@@ -12,4 +11,4 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-
+          command: ping innersource.accenture.com
