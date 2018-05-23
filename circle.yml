@@ -11,4 +11,3 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-          command: ping innersource.accenture.com
