@@ -18,8 +18,8 @@ jobs:
       - run:
           name: retrieve code from BB
           command: |
-            echo %CIRCLE_BRANCH%
-            git clone ssh://git@innersource.accenture.com/tpmmdshj/sampledx.git -b %CIRCLE_BRANCH%
+            echo $CIRCLE_BRANCH
+            git clone ssh://git@innersource.accenture.com/tpmmdshj/sampledx.git -b $CIRCLE_BRANCH
           
       - run:
           name: Download CLI
