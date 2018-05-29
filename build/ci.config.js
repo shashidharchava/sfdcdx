@@ -16,7 +16,6 @@ var git = require('git-rev-sync');
 
 var config = {
     url: 'https://login.salesforce.com',
-    packageName: 'Acc CAS Finance',
     testLevel: 'NoTestRun',
     runDeleteScript: false,
     checkOnly: false,
