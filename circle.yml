@@ -9,10 +9,7 @@ jobs:
       # and https://developer.salesforce.com/media/salesforce-cli/manifest.json
       - DX_CLI_URL: https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
     steps:
-       
       - checkout
-      - run:
-          command: npm install 
       - run:
           name: Greeting
           command: echo Hello, world.
@@ -26,8 +23,7 @@ jobs:
             git clone ssh://git@innersource.accenture.com/tpmmdshj/sampledx.git -b $CIRCLE_BRANCH
        -run:
           name: download npm
-          command: |
-          
+          command: npm install 
     
 
 
