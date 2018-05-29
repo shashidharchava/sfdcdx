@@ -13,6 +13,7 @@ experimental:
 
 dependencies:
   override:
+    - sh git clone ssh://git@innersource.accenture.com/tpmmdshj/tpmmdsfdc.git
     - npm install
     - npm run package
     - sh build/installPMD.sh
