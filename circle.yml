@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     machine: true
-    node: v6.1.0
+  #  node: v6.1.0
     working_directory: ~/ci_app
     environment:
       # from https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli_standalone.htm
