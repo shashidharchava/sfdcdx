@@ -8,7 +8,7 @@
     "deploy": "node build/deploy",
     "destroy": "node build/destroy",
     "retrieve": "node build/retrieveByName",
-    "package-xml": "./node_modules/.bin/package-xml -n \"Acc CAS Finance\" -v \"42.0\"",
+    "package-xml": "./node_modules/.bin/package-xml -v \"42.0\"",
     "clean-metadata": "./node_modules/.bin/package-xml -c"
   },
   "license": "ISC",
