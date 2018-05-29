@@ -23,7 +23,7 @@ var options = {
     checkOnly: ciconfig.checkOnly,
     testLevel: ciconfig.testLevel,
     ignoreWarnings: ciconfig.ignoreWarnings,
-    pollTimeout: 600000,
+    pollTimeout: 1200000,
     pollInterval: 15000,
     rollbackOnError : true,
     verbose : true,
