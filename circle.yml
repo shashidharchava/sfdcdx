@@ -2,7 +2,6 @@ version: 2
 jobs:
   build:
     machine: true
-  #  node: v6.1.0
     working_directory: ~/ci_app
     environment:
       # from https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli_standalone.htm
@@ -14,7 +13,7 @@ jobs:
           name: Greeting
           command: echo Hello, world.
       - run:
-          name: Print the Current Time
+          name: Print the Current Time  
           command: date
       - run:
           name: retrieve code from BB
