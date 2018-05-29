@@ -13,7 +13,9 @@ experimental:
 
 dependencies:
   override:
-    - sh git clone ssh://git@innersource.accenture.com/tpmmdshj/tpmmdsfdc.git
+    - cp ~/.ssh/id_circleci_github ~/.ssh/id_rsa
+    - git clone ssh://git@innersource.accenture.com/tpmmdshj/tpmmdsfdc.git
+    - mv -R tpmmdsfdc/src src
     - npm install
     - npm run package
     - sh build/installPMD.sh
