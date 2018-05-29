@@ -21,22 +21,6 @@ jobs:
             echo $CIRCLE_BRANCH
             git clone ssh://git@innersource.accenture.com/tpmmdshj/sampledx.git -b $CIRCLE_BRANCH
             
-       -run:
-          name: download npm
-          command: |
-          npm install 
-    
-
-
-
-
-
-
-
-
-
-
-
     - run:
           name: Download CLI
           command: |
